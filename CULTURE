@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Website Layout</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+ 
+body {
+  margin: 0;
+}
+ 
+/* Style the header */
+.header {
+  color:slateblue;
+  padding: 20px;
+  text-align: center;
+  background-color:white;
+}
+ 
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color:#9966ff;
+}
+ 
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color:black;
+  text-align: center;
+  padding: 18px 32px;
+  text-decoration: none;
+}
+ 
+/* Change color on hover */
+.topnav a:hover {
+  background-color:black;
+  color:blue;
+}
+ 
+/* Create three unequal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 10px;
+}
+ 
+/* Left and right column */
+.column.side {
+  width: 25%;
+  color:#884dff;
+  background-color:black;
+}
+ 
+/* Middle column */
+.column.middle {
+  width: 50%;
+   background-color:#884dff;
+}
+ 
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+ 
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column.side, .column.middle {
+    width: 100%;
+  }
+}
+ 
+/* Style the footer */
+.footer {
+  background-color: #f1f1f1;
+  padding: 20px 32px;
+  text-align: center;
+}
+</style>
+</head>
+<body>
+ 
+<div class="header">
+  <h1>Kpop Krazy </h1>
+  <p> </p>
+</div>
+ 
+<div class="topnav">
+  <a href="aboutme.html"> About me </a>
+  <a href="culture.html">Culture </a>
+  <a href="home.html"> Home </a>
+  <a href="groups.html"> Groups </a>
+  <a href="solo.html"> Soloist </a> 
+</div>
+ 
+<div class="row">
+  <div class="column side">
+    <h2> Merchandise </h2>
+    <p>In the culture of Kpop, Artist and Groups would release physical albums along with digital albums. </p>
+    
+    <p> The albums generally would include 1/2 photocards, a poster, a photobook, a tracklist and a CD.</p>
+     <p> Lightsticks are run originally in asian music culture. 
+       They are a lightstick that are originally made uniquely for the groups and artists. 
+       Lightsticks are used during concerts and award ceremonies to show the 
+       representation and support for the group/artist.</p>
+       <p> They would also release limited edition merch that fights with their time of comeback.   </p>
+  </div>
+  
+  <div class="column middle">
+    <h2> Culture </h2>
+    <p> Kpop is Korean Pop music that originated from South Korea.
+       Kpop is not limited to pop music but the most popular genre is pop so it is referred to Kpop. 
+       Korean Names would go by last name to first name. 
+       Kpop groups aren't limited to koreans only, 
+       many artists from asian countries would fly into korea to train to be an idol.
+        Those group members would be known as foreign members since they are from out of the country. 
+</p>
+    <p> Another cultural thing that runs in kpop is giving your fandom a name.
+       Many western Artists would just call them "fans'' but kpop groups and
+        artists would give them specific names that would fit their own group name.
+         One popular girl group named Twice had named their fandom Once. 
+         Many artists would name their fandoms that way. It is quite special.</p> 
+         
+         
+         
+         
+<p> There are 3 companies that are known as the big three and are the roots of kpop and are a big part of 
+  history for korean music. The roots of kpop run quite deep. 
+  The three companies are SM, JYP, and YG. SM is run by the CEO and founder of the company Lee Soo Man.
+   JYP is founded by Park Jinyoung but is run by JYPE. 
+   YG was founded by Yang Hyun-Suk but it is run by Hwan Bo-Kyung.
+    YG Entertainment was taken over by Hwan Bo-Kyung during June of 2019 because of the continuous scandals of YG.
+     Ever since the election of the new CEO it has started running better than the past years. </p>
+  </div>
+  
+  <div class="column side">
+    <h2>Rise </h2>
+    <p>Kpop has rise a lot in the past 5 years.
+       One song that had gotten huge in the western parts was 'Gangnam Style' by PSY. 
+       The song has been very well known in the states.
+        Another artist that has been on a constant rise is BTS. 
+        BTS is the south korean boy band that has 7 members. </p>
+        
+    <p> Another culture kpop thing is debuts and comebacks.
+       Debuts is where the group or artist would be officially released and announced to the people.
+        The would train for years and years under their company.
+         After their training is deemed perfect to the company they would be ready to debut. 
+         The album they would release is known as their debut album.  
+  </div>
+</div>
+ 
+<div class="footer">
+  <p> World full of music  </p>
+</div>
+  
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script></body>
+</html>
+ 

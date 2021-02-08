@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Website Layout</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+ 
+body {
+  margin: 0;
+}
+ 
+/* Style the header */
+.header {
+  color:slateblue;
+  padding: 20px;
+  text-align: center;
+  background-color:white;
+}
+ 
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color:#9966ff;
+}
+ 
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color:black;
+  text-align: center;
+  padding: 18px 32px;
+  text-decoration: none;
+}
+ 
+/* Change color on hover */
+.topnav a:hover {
+  background-color:black;
+  color:blue;
+}
+ 
+/* Create three unequal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 10px;
+}
+ 
+/* Left and right column */
+.column.side {
+  width: 25%;
+  color:#884dff;
+  background-color:black;
+}
+ 
+/* Middle column */
+.column.middle {
+  width: 50%;
+   background-color:#884dff;
+}
+ 
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+ 
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column.side, .column.middle {
+    width: 100%;
+  }
+}
+ 
+/* Style the footer */
+.footer {
+  background-color: #f1f1f1;
+  padding: 20px 32px;
+  text-align: center;
+}
+</style>
+</head>
+<body>
+ 
+<div class="header">
+  <h1>Kpop Krazy </h1>
+  <p> </p>
+</div>
+ 
+<div class="topnav">
+    <a href="aboutme.html"> About me </a>
+    <a href="culture.html">Culture </a>
+    <a href="home.html"> Home </a>
+    <a href="groups.html"> Groups </a>
+    <a href="solo.html"> Soloist </a> 
+</div>
+ 
+<div class="row">
+    <div class="column side">
+      <h2> </h2>
+      <p></p>
+    </div>
+  
+    
+    <div class="column middle">
+       <h2> Groups </h2>
+      <p> Kpop groups are split between boy and girl groups. 
+          There are also co-ed groups which would be a small group of two duos of male and female. 
+          They would also be female/male trios or duos. Groups consist of many ages and areas.
+Joining an idol group is not limited to Koreans only, 
+it is open to people from Japan, China, Vietnam, Thailand and many more people of Asian ethnicity. 
+They were trying for years under the company, to learn Korean and fit the “standard “. 
+Those people would be called “foreign “line as they are from Korea.
+ The foreign idols would face a lot of criticism from Kentz (Korean Citizens). </p> 
+ <p>
+  
+  Girl groups with our religion we made up of 5 to 7 members.
+  There are girl groups who have more members such as LOONA. 
+  LOONA is a girl group which is made up of 12 members.
+   Many girl groups are unconfirmed during their training time
+    as one famous with “black pink“ was originally planned to be a 
+    five member idol group but debuted as a  group of four. 
+    Lately the groups that are debuting newly in 2020 are small and competent.
+The competition has largely increased as the audience nowadays prefer a smaller group to stan.  </p> 
+     
+     <p>
+  
+  Boy groups are not only idol groups but also bands. 
+  Idol groups or groups who sing and dance when performing.
+   Bands or a group of musicians who would perform using their instruments rather than dancing like the “normal". 
+   Most groups are from 4/5+ members. The largest group I know of is NCT.
+    NCT is a boy group that is made up of 23 members. 
+    The group has more foriegn members than Korean.
+     There is a Chinese subunit called “WayV". 
+     The rest of the large group is mixed with Japanese, 
+     Chinese, one person from Thailand, American, and one person from Canada named Mark. </p>
+      <p>
+  
+  Lately I have been trying to get into the small group named “THE BOYZ“. 
+  The BOYZ is an 11 member boy band who debuted in 2017.
+  </p>
+    </div>
+    
+    <div class="column side">
+      <h2> </h2>
+      <p>  
+    </div>
+  </div>
+  
+  <div class="footer">
+    <p> World full of music  </p>
+  </div>
+    
+  <!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script></body>
+  </html>
+  
+  

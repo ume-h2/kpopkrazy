@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Website Layout</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+ 
+body {
+  margin: 0;
+}
+ 
+/* Style the header */
+.header {
+  color:slateblue;
+  padding: 20px;
+  text-align: center;
+  background-color:white;
+}
+ 
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color:#9966ff;
+}
+ 
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color:black;
+  text-align: center;
+  padding: 18px 32px;
+  text-decoration: none;
+}
+ 
+/* Change color on hover */
+.topnav a:hover {
+  background-color:white;
+  color:pink;
+}
+ 
+/* Create three unequal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 10px;
+}
+ 
+/* Left and right column */
+.column.side {
+  width: 25%;
+  color:#884dff;
+  background-color:black;
+}
+ 
+/* Middle column */
+.column.middle {
+  width: 50%;
+   background-color:#884dff;
+}
+ 
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+ 
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column.side, .column.middle {
+    width: 100%;
+  }
+}
+ 
+/* Style the footer */
+.footer {
+  background-color:#000000;
+  padding: 20px;
+  text-align: center;
+  color:pink;
+}
+ 
+.big3 {
+margin:8px;
+}
+</style>
+</head>
+<body>
+ 
+<div class="header">
+  <h1>Kpop Krazy </h1>
+  <p> </p>
+</div>
+ 
+<div class="topnav">
+  <a href="aboutme.html"> About me </a>
+  <a href="culture.html">Culture </a>
+  <a href="home.html"> Home </a>
+  <a href="groups.html"> Groups </a>
+  <a href="solo.html"> Soloist </a>
+  
+</div>
+ 
+<div class="row">
+  <div class="column side">
+    <h2>  </h2>
+    <p>   </p>
+  </div>
+ 
+  
+  <div class="column middle">
+     <h2> About me </h2>
+    <p> Hello, My name is Ume Habiba and i am a 16 y/o Junior in Brooklyn Studio.  
+</p>
+    <p> I chose to make a site on Kpop. 
+      Kpop is a very broad and beautiful category. 
+      Kpop is Korean Pop music, there are many other categories beside pop. 
+      There is a mix of Indie, EDM, Rock, Hip - Hop, RBnB, Jazz and much more.  </p>
+    
+    <p> I chose to make a site on kpop becuase it is the largest category of music i listen to. 
+      I listen to a variety of many groups and artists. The largest boy group i stan is of 23 members. 
+      The secound largest group i stan is made up of 13 members called Seventeen.
+       It is called seventeen becuase it is made up of 13 members + 3 units + 1 group which adds up to 17.    </p>
+    
+    <p> Lately i have been trying to get into this one group named "The Boyz".
+       The Boyz is an 11 memeber boy group who had debuted in 2017. 
+  </div>
+  
+  <div class="column side">
+    <h2> </h2>
+    <p>  
+  </div>
+</div>
+ 
+<div class="footer">
+  <p> World full of music and music makes the world  </p>
+</div>
+  
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script></body>
+</html>
+ 

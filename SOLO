@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Website Layout</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+ 
+body {
+  margin: 0;
+}
+ 
+/* Style the header */
+.header {
+  color:slateblue;
+  padding: 20px;
+  text-align: center;
+  background-color:white;
+}
+ 
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color:#9966ff;
+}
+ 
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color:black;
+  text-align: center;
+  padding: 18px 32px;
+  text-decoration: none;
+}
+ 
+/* Change color on hover */
+.topnav a:hover {
+  background-color:white;
+  color:pink;
+}
+ 
+/* Create three unequal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 10px;
+}
+ 
+/* Left and right column */
+.column.side {
+  width: 25%;
+  color:#884dff;
+  background-color:black;
+}
+ 
+/* Middle column */
+.column.middle {
+  width: 50%;
+   background-color:#884dff;
+}
+ 
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+ 
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column.side, .column.middle {
+    width: 100%;
+  }
+}
+ 
+/* Style the footer */
+.footer {
+  background-color:#000000;
+  padding: 20px;
+  text-align: center;
+  color:pink;
+}
+ 
+.big3 {
+margin:8px;
+}
+</style>
+</head>
+<body>
+ 
+<div class="header">
+  <h1>Kpop Krazy </h1>
+  <p> </p>
+</div>
+ 
+<div class="topnav">
+  <a href="aboutme.html"> About me </a>
+  <a href="culture.html">Culture </a>
+  <a href="home.html"> Home </a>
+  <a href="groups.html"> Groups </a>
+  <a href="solo.html"> Soloist </a> 
+</div>
+ 
+<div class="row">
+  <div class="column side">
+    <h2>  </h2>
+    <p>   </p>
+  </div>
+ 
+  
+  <div class="column middle">
+     <h2> Solo </h2>
+    <p> There are many solo artists in the Kpop industry. 
+        Many are well known while others are under appreciated. 
+        Solo culture is quite different in Koop. 
+        Many members of a group would have to go to the military due to civil requirements and
+         the remaining members would produce and promote their solo, they would be “going” solo 
+         for that time even when being a part of a group. 
+        This applies to both male and female. The military requirements apply to only male groups. 
+        It applies to every male korean celebrity, whether they are an actor, singer or entertainer.
+</p>
+    <p> There are many female soloists circulating. 
+        Many soloists had originated from leaving their groups or because of the disbandment of their group. 
+        One famously known solo artist is TAEYEON. 
+        TAEYEON is famously known for being a part of the girl group Girls Generation. 
+        Girl’s Generation is also known as SNSD, they have not disbanded but members have left the group.
+       Another famous solo artist is Chungha. She had debuted 3 years ago on June 6. 2017 with her solo album
+     “Hands on Me'' at the age of 21. 
+ 
+    <p> Solo culture is ultimately male dominated because of the militarial leaves of group members. 
+        They are also promoted while their group is not promoting.
+        One soloist who was not in a group is Eric Nam, who had recently released his full English album. 
+        Another soloist who is promoting while his members are busy and in the military is KAI from EXO. 
+        There are members of EXO who had joined military this year and a few are coming back from military in 2021 
+ 
+ 
+    <p> Lately the soloist I’ve been constantly listening to JAE of Day6, the 5 member band.
+         He isn’t a soloist but he produces and promotes his own music time to time 
+  </div>
+  
+  <div class="column side">
+    <h2> </h2>
+    <p>  
+  </div>
+</div>
+ 
+<div class="footer">
+  <p> World full of music and music makes the world  </p>
+</div>
+  
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script></body>
+</html>

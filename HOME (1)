@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Website Layout</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+ 
+body {
+  margin: 0px;
+}
+ 
+/* Style the header */
+.header {
+  color:slateblue;
+  padding: 20px;
+  text-align: center;
+  background-color:white;
+}
+ 
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color:#9966ff;
+}
+ 
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color:black;
+  text-align: center;
+  padding: 18px 32px;
+  text-decoration: none;
+}
+ 
+/* Change color on hover */
+.topnav a:hover {
+  background-color:black;
+  color:blue;
+}
+ 
+/* Create three unequal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 10px;
+}
+ 
+/* Left and right column */
+.column.side {
+  width: 25%;
+  color:#884dff;
+  background-color:black;
+}
+ 
+/* Middle column */
+.column.middle {
+  width: 50%;
+   background-color:#884dff;
+}
+ 
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+ 
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column.side, .column.middle {
+    width: 100%;
+  }
+}
+ 
+/* Style the footer */
+.footer {
+  background-color:#000000;
+  padding: 20px;
+  text-align: center;
+  color:pink;
+}
+ 
+.big3 {
+margin:8px;
+}
+</style>
+</head>
+<body>
+ 
+<div class="header">
+  <h1>Kpop Krazy </h1>
+  <p> </p>
+</div>
+ 
+<div class="topnav">
+  <a href="aboutme.html"> About me </a>
+  <a href="culture.html">Culture </a>
+  <a href="home.html"> Home </a>
+  <a href="groups.html"> Groups </a>
+  <a href="solo.html"> Soloist </a> 
+</div>
+ 
+<div class="row">
+  <div class="column side">
+    <h2> Enjoyment </h2>
+    <p> Kpop is a remedy to many. It has helped many people. We all are going through personal problems and music is a healing.  </p> 
+ 
+<p> Kpop as a whole has really helped me. Personally, I have changed and developed better through all the things I have learned through kpop. I have met such amazing people all across the internet through a band. I have gotten through some of my toughest times due to music. It helped me think of thoughts I long had forgotten existed.  </p>
+ 
+ 
+ 
+<p> The relationships that are built through kpop are the ones that seem like they would last your entire life. SO many pure and precious moments and memories. From the time you commit to the time you decide it's time to quit. All the love that is spread is very wholesome. Although so much of westerm media shows the "bad" side of kpop, it's not that deep.</p>
+ 
+<p> Once you enter there is no exit. You might find one but it's a long way in a dark hallway, struggling to find the lightswitch. The emotional and financial commitment that is made during the time is very deep. Through kpop i was able to develop and know my true self. All the ugly and pretty is all there, but it’s all a part of me.</p>
+ 
+<p> <b> One strong message I've learned is “It’s okay to not be okay”. <b>  </p>
+ 
+<p> That everything will be okay eventually. You must remember that pain is temporary. It takes time to let your wounds heal. It'll leave a scar but the wounds will close.</p>
+  </div>
+ 
+  <div class="column middle">
+     <h2> Kpop </h2>
+    <p> Kpop is Korean Pop music that originated from South Korea.
+     Kpop is not limited to pop music but the most popular genre is pop so it is referred to Kpop. 
+   It has largely dominated the music industry in past few years due to this idol group named BTS. Another popular male idol group that has been around since a very long time is SHINEE. SHINEE, a once 5 member group, debuted in the year of 2008. 
+</p>
+ 
+    <p> Kpop has faced a lot of criticism since it hit the western regions. One common question that is asked to korean groups is “why do you think kpop is so popular?”. One of my personal favorite answers is “It’s just music in another language. The same way we listen to ‘American’ music is the same way others listen to our songs”. </p>
+    
+    
+   
+    <p> Music is music no matter the language. There is no limit to it. We listen to latin/spanish, english, french. There should be no barrier and gates to the music industry in the sense of language. We all are born and raised differently yet there are thousands and thousands of people who are listening to the same song.  </p>
+    
+     <p> Another kpop embraces and spreads is the bond. The bond between the fan and group is so beautiful and special. Millions of people of different ages, religions, gender are coming together to listen to kpop. It is amazing to see the unity in concert video and images. </p> 
+    
+  </div>
+  
+  <div class="column side">
+    <h2> Platforms </h2>
+    <p> There are many platforms for kpop groups and soloists. One common platform is Twitter. There is something related to kpop trending every other day. Another large platform is Vlive/Vlive+. Vlive is a broadcasting app/site where idols would go live (as in instagram live). One platform for debuts and comebacks is Mnet. Mnet is famously known for debut and comeback stages. Once in a while there would be special stages.  </p>
+       
+         <p> Other platforms are stages such as MAMA, GDA,  SBS Music Awards and many more. They would be award shows at the end of the year or during comeback season. They are similar to the VMA’s and Grammy’s. </p>
+   
+    <p> Other events idol groups would attend are promotional shows to promote their music. During their comeback time they would also do a reality show and have behind the scenes of their music shows and concerts. One common video service would be documentary where it would show the real and raw behind the scenes. All the sacrifices that are made to complete the comeback/concert. </p>
+    
+    <p> Another place idols openly and actively communicate through is bubble, weverse and fansign events. Bubble is a personal chat between the chosen member and a fan. Weverse is an open platform similar to instagram and the artist may or may not see the post. Fansign events are run during comeback season and it has its own rules and regulations.
+    
+  </div>
+</div>
+ 
+<div class="footer">
+  <p> World full of music and music makes the world  </p>
+</div>
+  
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script></body>
+</html>
+
